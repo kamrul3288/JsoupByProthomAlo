@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kamrulhasan1995.com.jsoupbyprothomalo.activities.MainActivity">
+
+   <ImageView
+       android:src="@drawable/prothom_alo"
+       android:layout_width="match_parent"
+       android:layout_marginBottom="10dp"
+       android:layout_height="25dp" />
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_marginTop="3dp"
+       android:layout_width="match_parent"
+       android:layout_weight="2"
+       android:layout_height="0dp">
+
+      <LinearLayout
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/newsTitle"
+             android:textColor="#000"
+             android:layout_marginBottom="5dp"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+         <ImageView
+             android:id="@+id/newsImage"
+             android:layout_marginBottom="5dp"
+             android:scaleType="centerCrop"
+             android:layout_width="match_parent"
+             android:layout_height="130dp" />
+
+         <TextView
+             android:id="@+id/newsDetails"
+             android:textColor="#000"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+
+
+   </android.support.v4.widget.NestedScrollView>
+
+   <View
+      android:background="#CCCCCC"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"/>
+
+   <LinearLayout
+       android:layout_marginTop="5dp"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+
+      <TextView
+          android:textSize="18sp"
+          android:text="সর্বশেষ সংবাদ : "
+          android:textColor="#000"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+   </LinearLayout>
+</LinearLayout>
